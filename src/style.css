@@ -1,0 +1,61 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 23px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 10px 30px;
+  padding-top: 25px;
+  float: right;
+}
+
+li {
+  list-style: none;
+  font-size: 16px;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+  color: white;
+}
+
+.weather-app {
+  padding: 20px;
+  background-color: rgb(55, 65, 85);
+  border: 1px solid #fff;
+  border-radius: 8px;
+}
+
+.overview {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.overview strong {
+  font-size: 80px;
+}
+
+.units {
+  position: relative;
+  top: -35px;
+}
+
+.weather-description {
+  margin: 10px 30px;
+}
+
+.weather-description img {
+  height: 70px;
+}
