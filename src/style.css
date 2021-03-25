@@ -12,6 +12,7 @@ h1 {
 h2 {
   font-size: 23px;
   margin-bottom: 0;
+  text-transform: capitalize;
 }
 
 ul {
