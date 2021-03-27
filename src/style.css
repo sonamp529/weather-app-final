@@ -53,6 +53,11 @@ li {
   top: -35px;
 }
 
+.active {
+  cursor: default;
+  color: white;
+}
+
 .weather-description {
   margin: 10px 30px;
 }
@@ -64,4 +69,9 @@ li {
 
 #description {
   text-transform: capitalize;
+}
+
+#celsius-link,
+#fahrenheit-link {
+  text-decoration: none;
 }
