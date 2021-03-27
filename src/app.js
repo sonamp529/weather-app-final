@@ -34,9 +34,19 @@ function displayTemperature(response) {
     iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+function search(city) {
 let apiKey = "9fd12ff10340c7c6ab802ba58ee60657";
-let city = "Etobicoke";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-console.log(apiUrl);
-
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault(); 
+    let cityInputElement = document.querySelector("#city-input");
+    search(cityInputElement.value);
+}
+
+search("Etobicoke");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
